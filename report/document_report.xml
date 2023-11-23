@@ -1,0 +1,21 @@
+<odoo>
+    <report
+            id="report_document"
+            string="Document Report"
+            model="document.management"
+            report_type="qweb-pdf"
+            name="your_module.report_document"
+            file="your_module.report_document"
+    />
+
+    <record id="report_document" model="ir.actions.report">
+        <field name="name">document.management</field>
+        <field name="model">document.management</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">your_module.report_document</field>
+        <field name="report_file">your_module.report_document</field>
+        <field name="print_report_name">Document Report</field>
+        <field name="report_xml_id">your_module.report_document</field>
+    </record>
+</odoo>
+

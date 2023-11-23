@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <!-- ... Kitos įrašai iš tavo manifest failo ... -->
+
+        <record id="action_document_management" model="ir.actions.act_window">
+            <field name="name">Dokumentų Valdymas</field>
+            <field name="res_model">document.management</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Naujas meniu įrašas su atnaujinta nuoroda į ataskaitą -->
+        <record id="menu_document_report" model="ir.actions.act_window">
+            <field name="name">Dokumentų Ataskaita</field>
+            <field name="res_model">document.report.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="your_module.view_document_report_wizard_form"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="your_module.view_document_report_wizard_form"/>
+        </record>
+
+    </data>
+</odoo>
